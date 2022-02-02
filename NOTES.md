@@ -1,11 +1,11 @@
 ## Build
 
 ```
-cc sources/main.c -o bin/sqlcmd
+cc src/main.c -o build/sqlcmd-arm64
 ```
 
 ## Run
 
 ```
-bin/sqlcmd -a -b -c
+build/sqlcmd-arm64 -a -b -c
 ```
