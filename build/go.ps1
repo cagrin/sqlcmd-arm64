@@ -1,3 +1,3 @@
 cmake ..
 make
-./sqlcmd-arm64 -1 -2 -3
+./sqlcmd -1 -2 -3
