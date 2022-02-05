@@ -1,2 +1,3 @@
 build/*
-!build/go.ps1
+!build/test.ps1
+!build/script.sql

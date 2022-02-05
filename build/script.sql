@@ -1,0 +1,1 @@
+declare @r int; select @r = 1;

@@ -1,7 +1,7 @@
 ## Build
 
 ```
-cc src/main.c -o build/sqlcmd
+cc src/sqlcmd.c -o build/sqlcmd
 ```
 
 ## Run
