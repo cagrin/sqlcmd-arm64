@@ -1,3 +1,2 @@
 build/*
-!build/test.ps1
-!build/script.sql
+!build/CMakeLists.txt

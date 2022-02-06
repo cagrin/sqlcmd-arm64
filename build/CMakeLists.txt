@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.22.0)
 project (sqlcmd-arm64)
 # include_directories(include)
-file(GLOB SOURCES "src/*.c")
+file(GLOB SOURCES "../src/*.c")
 add_executable(sqlcmd ${SOURCES})
