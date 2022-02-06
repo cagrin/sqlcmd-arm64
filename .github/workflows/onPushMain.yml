@@ -1,0 +1,15 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@master
+      - name: Build
+        run: gcc darwin/src/sqlcmd.c -o darwin/build/sqlcmd
