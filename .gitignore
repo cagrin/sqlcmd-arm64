@@ -1,2 +1,2 @@
-build/*
-!build/CMakeLists.txt
+darwin/build/*
+!darwin/build/CMakeLists.txt

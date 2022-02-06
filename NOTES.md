@@ -1,11 +1,11 @@
 ## Build
 
 ```
-cc src/sqlcmd.c -o build/sqlcmd
+cc darwin/src/sqlcmd.c -o darwin/build/sqlcmd
 ```
 
 ## Run
 
 ```
-build/sqlcmd -a -b -c
+darwin/build/sqlcmd -a -b -c
 ```
