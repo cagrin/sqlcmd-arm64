@@ -5,11 +5,28 @@ on:
     branches:
       - main
 
+env:
+  BUILD_COMMAND: gcc darwin/src/sqlcmd.c -o darwin/build/sqlcmd
+
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  build-on-ubuntu-latest:
+    runs-on: ubuntu-20.04
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@master
       - name: Build
-        run: gcc darwin/src/sqlcmd.c -o darwin/build/sqlcmd
+        run: ${{env.BUILD_COMMAND}}
+  build-on-macos-latest:
+    runs-on: macos-11
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@master
+      - name: Build
+        run: ${{env.BUILD_COMMAND}}
+  build-on-windows-latest:
+    runs-on: windows-2022
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@master
+      - name: Build
+        run: ${{env.BUILD_COMMAND}}
