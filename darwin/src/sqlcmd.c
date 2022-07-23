@@ -16,6 +16,7 @@ int main(int argc, char *argv[])
         }
 
              if(strcmp(argv[i], "-S") == 0) { strcpy(arg, "-ServerInstance"); }
+        else if(strcmp(argv[i], "-d") == 0) { strcpy(arg, "-Database"); }
         else if(strcmp(argv[i], "-U") == 0) { strcpy(arg, "-Username"); }
         else if(strcmp(argv[i], "-P") == 0) { strcpy(arg, "-Password"); }
         else if(strcmp(argv[i], "-b") == 0) { strcpy(arg, "-AbortOnError"); }
