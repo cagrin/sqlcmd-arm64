@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  BUILD_COMMAND: gcc darwin/src/sqlcmd.c -o darwin/build/sqlcmd
+  BUILD_COMMAND: gcc -v darwin/src/sqlcmd.c -o darwin/build/sqlcmd
 
 jobs:
   build-on-ubuntu-latest:

@@ -1,4 +1,1 @@
-cd build
-cmake .
-make
-cd ..
+gcc -v src/sqlcmd.c -o build/sqlcmd
