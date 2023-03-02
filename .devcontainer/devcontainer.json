@@ -1,0 +1,8 @@
+{
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu-18.04",
+    "features": {
+        "./powershell": {},
+        "ghcr.io/devcontainers/features/docker-in-docker": {}
+    },
+    "postCreateCommand": "pwsh -Command Install-Module -Name SqlServer -RequiredVersion 21.1.18256 -Force"
+}
