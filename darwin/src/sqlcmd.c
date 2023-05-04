@@ -25,6 +25,7 @@ int main(int argc, char *argv[])
         else if(strcmp(argv[i], "-Q") == 0) { strcpy(arg, "-Query"); empty = 1; }
         else if(strcmp(argv[i], "-r") == 0) { strcpy(arg, "-OutputSqlErrors"); }
         else if(strcmp(argv[i], "-t") == 0) { strcpy(arg, "-ConnectionTimeout"); }
+        else if(strcmp(argv[i], "-C") == 0) { strcpy(arg, "-TrustServerCertificate"); }        
         else
         {
             if(strcmp(argv[i-1], "-r") == 0)
