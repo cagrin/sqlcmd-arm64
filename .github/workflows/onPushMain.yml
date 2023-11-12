@@ -9,24 +9,9 @@ env:
   BUILD_COMMAND: gcc -v darwin/src/sqlcmd.c -o darwin/build/sqlcmd
 
 jobs:
-  build-on-ubuntu-latest:
-    runs-on: ubuntu-20.04
-    timeout-minutes: 15
-    steps:
-      - uses: actions/checkout@master
-      - name: Build
-        run: ${{env.BUILD_COMMAND}}
-  build-on-macos-latest:
-    runs-on: macos-11
-    timeout-minutes: 15
-    steps:
-      - uses: actions/checkout@master
-      - name: Build
-        run: ${{env.BUILD_COMMAND}}
-  build-on-windows-latest:
-    runs-on: windows-2022
-    timeout-minutes: 15
-    steps:
-      - uses: actions/checkout@master
-      - name: Build
-        run: ${{env.BUILD_COMMAND}}
+  build:
+    runs-on: ubuntu-latest
+      - uses: actions/checkout@v4
+      - uses: devcontainers/ci@v0.3
+        with:
+          runCmd: ${{env.BUILD_COMMAND}}

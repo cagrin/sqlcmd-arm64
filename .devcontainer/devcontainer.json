@@ -1,8 +1,8 @@
 {
-    "image": "mcr.microsoft.com/devcontainers/base:ubuntu-18.04",
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
     "features": {
-        "ghcr.io/devcontainers/features/docker-in-docker": {},
-        "ghcr.io/devcontainers/features/powershell": {
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+        "ghcr.io/devcontainers/features/powershell:1": {
             "modules": [
                 "SqlServer"
             ]
